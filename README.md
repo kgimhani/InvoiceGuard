@@ -23,7 +23,6 @@ InvoiceGuard is a Flask-based machine learning web application that classifies i
 
 ## ▶️ How to Run Locally
 
-```bash
 git clone https://github.com/kgimhani/InvoiceGuard.git
 cd InvoiceGuard
 pip install -r requirements.txt
