@@ -34,4 +34,4 @@ http://localhost:5000
 
 ## 🌐 Live Demo
 
-👉 [InvoiceGuard AI](https://huggingface.co/spaces/kkkgimhani/InvoiceGuard)
+👉 https://huggingface.co/spaces/kkkgimhani/InvoiceGuard
