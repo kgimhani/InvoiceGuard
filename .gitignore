@@ -9,3 +9,6 @@ uploads/
 *.h5
 *.pkl
 *.db
+venv/
+venv_new/
+__pycache__/
