@@ -31,3 +31,7 @@ python app.py
 
 Then open:
 http://localhost:5000
+
+## 🌐 Live Demo
+
+👉 https://huggingface.co/spaces/kkkgimhani/InvoiceGuard
