@@ -1,0 +1,11 @@
+venv/
+venv_new/
+__pycache__/
+*.pyc
+.DS_Store
+testing/
+model/
+uploads/
+*.h5
+*.pkl
+*.db

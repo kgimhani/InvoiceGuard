@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Classification System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Invoice Classification System</h1>
+            <p>Upload a scanned invoice to classify its category</p>
+        </header>
+
+        <main>
+            <div class="upload-container">
+                <div class="upload-area" id="dropZone">
+                    <img src="{{ url_for('static', filename='images/upload-icon.svg') }}" alt="Upload" id="uploadIcon">
+                    <p>Drag and drop your invoice here or</p>
+                    <label for="fileInput" class="upload-button">Choose File</label>
+                    <input type="file" id="fileInput" accept=".jpg,.jpeg,.png" hidden>
+                </div>
+
+                <div class="preview-container" hidden>
+                    <img id="imagePreview" alt="Preview" hidden>
+                    <button class="classify-button" id="classifyButton" disabled>Classify Invoice</button>
+                </div>
+            </div>
+
+            <div class="results-container" hidden>
+                <h2>Classification Results</h2>
+                <div class="result-card">
+                    <div class="primary-result">
+                        <h3>Predicted Category:</h3>
+                        <p id="predictedCategory"></p>
+                        <div class="confidence-meter">
+                            <div class="confidence-bar">
+                                <div class="confidence-fill" id="confidenceFill"></div>
+                            </div>
+                            <span id="confidenceValue"></span>
+                        </div>
+                    </div>
+                    <div class="detailed-results">
+                        <h3>Category Probabilities:</h3>
+                        <div id="probabilityBars"></div>
+                    </div>
+                </div>
+                <button class="reset-button" id="resetButton">Classify Another Invoice</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
